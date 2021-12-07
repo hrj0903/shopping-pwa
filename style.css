@@ -1,0 +1,80 @@
+:root {
+  /* color */
+  --color-black: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+}
+
+section {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  padding: 0;
+  margin-right: 1em;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+button > img {
+  width: 40%;
+}
+
+button:nth-child(4) {
+  background-color: var(--color-blue);
+}
+
+button:nth-child(5) {
+  background-color: var(--color-yellow);
+}
+
+button:nth-child(6) {
+  background-color: var(--color-pink);
+}
+
+ul {
+  margin: 2em;
+  width: 75%;
+  list-style: none;
+}
+
+li {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+li img {
+  width: 7%;
+  margin-right: 2em;
+}
+
+.invisible {
+  display: none;
+}
